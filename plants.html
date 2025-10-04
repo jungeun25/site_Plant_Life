@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>식물 도감 | Plant Life</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 한 줄에 3개씩 */
+    .plant-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .plant-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      width: calc(30% - 20px); 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      min-width: 150px;
+    }
+
+    .plant-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .plant-card h3 {
+      position: relative;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      font-size: 1.3rem;
+    }
+
+    .plant-card h3::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      background-color: #8cc63f;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="로고" />
+    <h1>Plant Life</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">🌿 Plant Life 소개</a></li>
+      <li><a href="plants.html" class="active">🪴 식물 도감</a></li>
+      <li><a href="tips.html">🧤 가드닝 팁</a></li>
+      <li><a href="interior.html">🪟 인테리어</a></li>
+      <li><a href="community.html">💬 커뮤니티</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 class="page-title">🪴 식물 도감</h2>
+
+  <div class="plant-gallery">
+    <!-- 1 -->
+    <div class="plant-card">
+      <img src="monst.jpg">
+      <h3 class="title">몬스테라(Monstera)</h3>
+      <p>온도와 습도가 중요한 식물입니다. 커다란 잎에 구멍이 뚫린 듯한 <br> 독특한 모양으로 많은 사랑을 받고 있습니다.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="plant-card">
+      <img src="snap.jpg">
+      <h3 class="title">산세베리아(Sansevieria)</h3>
+      <p>공기정화 능력이 뛰어나고, 습도와 환경 변화에 강하여 초보자들이 키우기 좋은 식물입니다.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="plant-card">
+      <img src="stup.jpg">
+      <h3 class="title">스투키(Stuckyi)</h3>
+      <p>기둥형 잎이 매력적인 다육식물로, 공기정화 능력도 좋습니다. <br> 관리가 비교적 쉬워 초보자들에게 인기가 많습니다.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="plant-card">
+      <img src="pepe.jpg">
+      <h3 class="title">페페로미아(Peperomia)</h3>
+      <p>후추과에 속하는 다육질 식물이며, 종류가 매우 많습니다. <br> 작은 화분에서도 잘자라는 특성이 있으며 두꺼운 잎이 특징입니다.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="plant-card">
+      <img src="Cala.jpg">
+      <h3 class="title">칼라데아(Calathea)</h3>
+      <p>종류가 많으며, 독특한 잎의 색상과 무늬로 실내 관엽식물로 인기가 많습니다. <br> 밝은 간접광을 좋아하는 특성이 있습니다.</p>
+    </div>
+
+    <!-- 6-->
+    <div class="plant-card">
+      <img src="phil.jpg">
+      <h3 class="title">필로덴드론(Philodendron)</h3>
+      <p>덩굴형, 직립형, 나무형의 세가지 유형이 있습니다. <br> 다른 식물에 비해 크게 자라며, 추위에 약합니다.</p>
+    </div>
+
+    <!-- 추가 -->
+  </div>
+</main>
+
+</body>
+</html>
